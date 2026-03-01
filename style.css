@@ -1,0 +1,150 @@
+/* Базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Шрифт для обычного текста */
+    font-family: 'PT Serif', serif; 
+    color: #3b2c24; /* Темно-коричневый цвет текста из приложения */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    /* Шрифт для заголовков (как в приложении) */
+    font-family: 'Playfair Display', serif; 
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Главный экран (Пергамент) --- */
+.hero-section {
+    background-color: #f7f1e3; /* Бежевый фон из приложения */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.logo-title {
+    font-size: 3rem;
+    color: #2c1e16;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #6d5b50;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+}
+
+.text-block {
+    flex: 1;
+    min-width: 300px;
+}
+
+.text-block h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-block p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #2c1e16; /* Темная кнопка */
+    color: #f7f1e3;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #4a3628;
+}
+
+.image-block {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.hero-img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Крылья библиотеки (Темный раздел) --- */
+.library-wings {
+    background-color: #121212; /* Темный фон */
+    color: #f7f1e3;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    color: #d4af37; /* Золотой цвет текста */
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2); /* Золотистое свечение */
+}
+
+.card h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* --- Подвал --- */
+footer {
+    background-color: #0a0a0a;
+    color: #666;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+}
